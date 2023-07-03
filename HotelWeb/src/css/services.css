@@ -1,0 +1,179 @@
+.services-bg{
+    padding: var(--padding-lg);
+    display: flex;
+    flex-direction: column;
+    background-color:  #e9e0e0;
+    box-shadow: 0px 10px 25px 5px #e9e0e0;
+}
+.services-head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    padding: var(--padding-lg);
+}
+.services-head h1{
+    font-family: 'MS PGothic';
+    font-size: var(--txt-l-re);
+    font-weight: 600;
+    color: var(--acent);
+    margin: 0 auto 0 0;
+}
+.service-cards{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+}
+.s-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-lg);
+    width: 35%;
+}
+.s-card img{
+    width: 85%;
+    border: 2px solid var(--acent);
+    border-radius: 25%;
+    padding: auto;
+}
+.s-card h3{
+    font-size: 24px;
+    font-family: 'Ysabeau Office';
+    margin-bottom: 0;
+}
+.s-card p{
+    font-size: var(--txt-s-re);
+    padding: var(--padding-sm);
+    text-align: justify;
+    padding: auto;
+}
+.s-card a{
+    text-decoration: none;
+    color: var(--primary);
+    border-radius: 10px;
+    padding: 10px 25px;
+    transition: 0.75s;
+}
+.s-card a:hover{
+    border: none;
+    background-color: var(--white);
+    color: var(--secondary);
+}
+
+
+/* *******  Features Part  ******** */
+.feature-bg{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--padding-lg);
+}
+.feat-head{
+    display: flex;
+    flex-direction: row;
+}
+.feat-head h3::before{
+    content: '';
+    display: block;
+    width: 150%;
+    height: 3px;
+    border-radius: 25px;
+    background-color: var(--secondary);
+    position: absolute;
+    left: -15em;
+    top: 50%;
+}
+.feat-head h3::after{
+    content: '';
+    display: block;
+    width: 150%;
+    height: 3px;
+    border-radius: 25px;
+    background-color: var(--secondary);
+    position: absolute;
+    right: -15em;
+    top: 50%;
+}
+.feat-head h3{
+    font-family: 'EB Garamond';
+    font-weight: 600;
+    font-style: oblique;
+    padding: 10px var(--padding-sm);
+    font-size: var(--txt-md);
+    text-align: center;
+    position: relative;
+    transition: 0.75s;
+}
+.feat-cont{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: center;
+    padding: var(--padding-lg);
+}
+.feat-card{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-md);
+    font-family: 'Noto serif';
+}
+.feat-card h1{
+    font-size: var(--txt-l-re);
+    padding: 0 var(--padding-lg);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.feat-card ul{
+    list-style: circle;
+    color: var(--acent);
+}
+.feat-card ul li{
+    font-size: var(--txt-m-re);
+    line-height: 1.5em;
+    padding: 0.3rem;
+}
+.feat-card img{
+    width: 100%;
+    border-radius: 2em;
+    padding: var(--padding-md);
+}
+
+@media only screen and (max-width: 650px){
+    .service-cards{
+        flex-direction: column;
+        align-items: center;
+    }
+    .s-card{
+        width: 70%;
+        padding: var(--padding-lg) var(--padding-sm);
+    }
+    
+}
+@media only screen and (max-width: 720px){
+    .s-card{
+        width: 75%;
+    }
+    .feat-cont{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .feat-card{
+        width: 70%;
+    }
+    .feat-head h3::after{
+        width: 100%;
+        right: -10em;
+    }
+    .feat-head h3::before{
+        width: 100%;
+        left: -10em;
+    }
+}
