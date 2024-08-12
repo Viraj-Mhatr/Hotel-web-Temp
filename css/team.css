@@ -1,0 +1,76 @@
+.team-bg{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-lg);
+    background-color: #e9e0e0;
+    box-shadow: 0px 10px 20px 5px #e9e0e0;
+}
+.team-bg h1{
+    font-family: 'MS PGothic';
+    font-size: var(--txt-l-re);
+    font-weight: 600;
+    margin-bottom: 0;
+    color: var(--acent);
+    padding: 0 var(--padding-lg);
+}
+.team-bg > p{
+    font-size: var(--txt-s-re);
+    padding: var(--padding-sm);
+    text-align: justify;
+    padding: 0 var(--padding-lg);
+}
+.team-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.t-card{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    align-items: flex-start;
+    justify-content: center;
+    padding: var(--padding-lg);
+}
+.t-card img{
+    width: 45%;
+    padding: var(--padding-md);
+    border-radius: 1.5rem;
+}
+.t-info{
+    display: flex;
+    flex-direction: column;
+    padding: var(--padding-md);
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.t-info h2{
+    font-family: 'EB Garamond';
+    font-size: var(--txt-l-re);
+    font-weight: 500;
+    font-style: oblique;
+    padding: 0 var(--padding-sm);
+}
+.t-info p{
+    font-size: var(--txt-s-re);
+}
+
+@media only screen and (max-width: 720px){
+    .t-card{
+        flex-direction: column;
+        align-items: center;
+    }
+    .t-info{
+        align-items: center;
+        text-align: center;
+    }
+    .t-info > h2{
+        padding: 0;
+    }
+    .t-card img{
+        width: 70%;
+    }
+}
